@@ -22,3 +22,18 @@ with open("new_json_file.json", "w") as jsonfile:
     json.dump(car_data, jsonfile)
 
 # Encoding and creating into JSON file. Car_data converted into string by
+
+# Decoding
+with open("new_json_file.json") as jsonfile:
+    # Reading from file I just created
+    # Storing data from file to car variable. This is parsing
+    car = json.load(jsonfile)
+    # Checking/testing data
+    print(type(car))
+    print(car["Name"])
+    # Different dictionary method for practice
+    print(car.get("Country"))
+
+# Playing around
+# jsonfile = json.dumps(car_data, indent = 4, seperators = ("."))
+# print(jsonfile)
