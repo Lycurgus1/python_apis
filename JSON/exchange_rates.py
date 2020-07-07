@@ -14,17 +14,17 @@ class Exchange_rates:
 
     # fetch data from exchange_rates.json
     def fetch_data(self):
-            # display the data
-            print(self.dataset)
-            # display the type of data
-            print(type(self.dataset))
+        # display the data
+        print(self.dataset)
+        # display the type of data
+        print(type(self.dataset))
 
     # method to return the exchange rates
     def fetch_exchange_rates(self):
-            # For loop to get all exchange rates
-            for key in self.dataset:
-                if key == "rates":
-                    print(self.dataset["rates"])
+        # For loop to get all exchange rates
+        for key in self.dataset:
+            if key == "rates":
+                print(self.dataset["rates"])
 
     def fetch_specific_rate(self):
         exchange_rate_data = (self.dataset["rates"])
